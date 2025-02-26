@@ -1,0 +1,106 @@
+/*================================
+    Marquee Animation Style 
+================================*/
+
+.wdt-animation-holder:not(.vertical) .wdt-animation-wrapper {
+    position: relative; display: flex; flex-flow: row nowrap; overflow: hidden; }
+
+.wdt-animation-holder:not(.vertical) .wdt-animation-wrapper div[class*="-marqee"] {
+    width: auto; flex: 0 0 auto; display: grid; grid-auto-flow: column; align-items: center; }
+
+.wdt-animation-holder:not(.vertical) .wdt-animation-wrapper div[class*="-marqee"] .wdt-animation-item {
+    display: inline-flex; flex: 0 0 auto; text-align: center; position: relative; }
+
+.wdt-animation-holder:not(.vertical) .wdt-animation-wrapper .wdt-animation-item {
+    padding: 0 clamp(0.875rem, 0.7308rem + 0.641vw, 1.5rem); /*  Min-14 & Max-24 */ }
+
+.wdt-animation-holder:not(.vertical) .wdt-animation-wrapper div[class*="-marqee"].right-to-left,
+.wdt-animation-holder:not(.vertical) .wdt-animation-wrapper div[class*="-marqee"].right-to-left ~ div {
+    -webkit-animation: MarqueeLeft 24s linear infinite 0ms; animation: MarqueeLeft 24s linear infinite 0ms; }
+
+.wdt-animation-holder:not(.vertical) .wdt-animation-wrapper div[class*="-marqee"].left-to-right,
+.wdt-animation-holder:not(.vertical) .wdt-animation-wrapper div[class*="-marqee"].left-to-right ~ div {
+    -webkit-animation: MarqueeRight 24s linear infinite 0ms; animation: MarqueeRight 24s linear infinite 0ms; }
+
+.wdt-animation-wrapper:hover div[class*="-marqee"] { -webkit-animation-play-state: paused; animation-play-state: paused; }
+
+@keyframes MarqueeRight {
+    from { transform: translateX(var(--wdt-marque-Margin-Width)); }
+    to { transform: translateX(0); }
+}
+
+@keyframes MarqueeLeft {
+    from { transform: translateX(0); }
+    to { transform: translateX(var(--wdt-marque-Margin-Width)); }
+}
+
+/* ===========================
+    Vertical Animation Style
+=========================== */
+
+.wdt-animation-holder.vertical { overflow: hidden; }
+
+.wdt-animation-holder.vertical .wdt-animation-wrapper { height: var(--wdt-marque-height); }
+
+.wdt-animation-holder.vertical .wdt-animation-wrapper .wdt-animation-item { display: block; }
+
+.wdt-animation-holder.vertical .wdt-animation-wrapper div[class*="-marqee"].top-to-bottom,
+.wdt-animation-holder.vertical .wdt-animation-wrapper div[class*="-marqee"].top-to-bottom ~ div[class*="-cloned-marqee"] {
+    -webkit-animation: MarqueeTop 24s linear infinite 0ms; animation: MarqueeTop 24s linear infinite 0ms; }
+
+.wdt-animation-holder.vertical .wdt-animation-wrapper div[class*="-marqee"].bottom-to-top,
+.wdt-animation-holder.vertical .wdt-animation-wrapper div[class*="-marqee"].bottom-to-top ~ div[class*="-cloned-marqee"] {
+    -webkit-animation: MarqueeBottom 24s linear infinite 0ms; animation: MarqueeBottom 24s linear infinite 0ms; }
+
+.wdt-animation-wrapper:hover div[class*="-marqee"] { -webkit-animation-play-state: paused !important; animation-play-state: paused !important; }
+
+@keyframes MarqueeTop {
+    from { transform: translateY(var(--wdt-marque-Margin-height)); }
+    to { transform: translateY(0); }
+}
+
+@keyframes MarqueeBottom {
+    from { transform: translateY(0); }
+    to { transform: translateY(var(--wdt-marque-Margin-height)); }
+}
+
+/* ===========================
+    Animation Text Style 
+=========================== */
+
+.wdt-animation-item.text-item { display: inline-block; }
+
+.wdt-animation-wrapper > div:has(> .wdt-animation-item.text-item),
+.wdt-animation-item.text-item .wdt-animation-text { font-size: clamp(1.75rem, 1.4615rem + 1.2821vw, 3rem); /* Min-28 & Max-48 */ }
+
+.wdt-animation-holder:not(.vertical) .wdt-animation-wrapper .wdt-animation-item.text-item { padding: 0 0.45em; }
+
+.wdt-animation-item.text-item .wdt-animation-text { font-weight: var(--wdtFontWeight_Alt); -webkit-text-fill-color: transparent;
+    font-family: var(--wdtFontTypo_Alt); text-transform: uppercase; line-height: 1; -webkit-text-stroke: 2px currentColor; }
+
+.wdt-animation-item.text-item .wdt-animation-text a { text-decoration: none !important; color: var(--wdtLinkColor, var(--wdtDarkLinkColor)); }
+
+#footer .wdt-animation-item.text-item .wdt-animation-text a:hover,
+.wdt-animation-item.text-item .wdt-animation-text a:hover { background-color: transparent; background-size: cover; color: var(--wdtPrimaryColor, var(--wdtDarkPrimaryColor)); }
+
+.wdt-big-marquee-text .wdt-animation-wrapper > div:has(> .wdt-animation-item.text-item),
+.wdt-big-marquee-text .wdt-animation-item.text-item .wdt-animation-text { font-size: clamp(3.375rem, 1.9904rem + 6.1538vw, 9.375rem); /* Min-54 & Max-150 */ }
+
+/* ===========================
+    Animation Icon Style 
+=========================== */
+
+.wdt-animation-item.icon-item i { display: flex; align-items: center; justify-content: center;
+    font-size: clamp(1.75rem, 1.4615rem + 1.2821vw, 3rem); /* Min-28 & Max-48 */
+    width: clamp(1.75rem, 1.4615rem + 1.2821vw, 3rem); /* Min-28 & Max-48 */
+    height: clamp(1.75rem, 1.4615rem + 1.2821vw, 3rem); /* Min-28 & Max-48 */ }
+
+/* ===========================
+    Animation Image Style 
+=========================== */
+
+.wdt-animation-item.image-item img { object-fit: cover; object-position: center; width: 100%; height: 100%; }
+
+/* ===========================
+    Responsive
+=========================== */

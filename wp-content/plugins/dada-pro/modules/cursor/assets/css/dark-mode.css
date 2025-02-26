@@ -1,0 +1,76 @@
+
+/* .wdt-dark-mode-switcher { position: fixed; top: 20%; left: 2.5%; cursor: pointer;
+        transform: translate(0%, -50%) rotate(180deg); z-index: 9999; writing-mode: vertical-lr; }
+
+    .wdt-dark-mode-switcher .dark-mode-toggle { display: flex; padding: 18px 12px; background-color: rgba(150, 144, 162, 0.25);
+        cursor: pointer; -webkit-box-shadow: 0 0 0 2px rgba(150, 144, 162, 0.15) inset; box-shadow: 0 0 0 2px rgba(150, 144, 162, 0.15) inset; 
+        border-radius: 10rem; border: 1px solid var(--wdtBorderColor, var(--wdtDarkBorderColor)); 
+        color: var(--wdtHeadAltColor, var(--wdtDarkHeadAltColor)); text-transform: capitalize; line-height: 0; } */
+
+    /* .wdt-dark-mode-switcher .dark-mode-toggle .switch__item { display: flex; align-items: center; justify-content: center; position: relative; }
+    .wdt-dark-mode-switcher .dark-mode-toggle .switch__item.dark_mode__switch { padding-bottom: 18px; }
+    .wdt-dark-mode-switcher .dark-mode-toggle .switch__item.light_mode__switch { padding-top: 18px; }
+    .wdt-dark-mode-switcher .dark-mode-toggle .switch__item .dark-mode-toggle_text { margin-bottom: 8px; }
+    .wdt-dark-mode-switcher .dark-mode-toggle .switch__item .dark-mode-toggle_icon { transform: rotate(-90deg); }
+
+
+    .wdt-dark-mode-switcher .dark-mode-toggle:before { content: ""; pointer-events: none;
+        position: absolute; width: calc(100% - 6px); background-color: rgba(var(--wdtBodyBGColorRgb, var(--wdtDarkBodyBGColorRgb)), 0.7); 
+        -webkit-transition: var(--wdt-Ad-Transition); transition: var(--wdt-Ad-Transition); border-radius: inherit; left: 3px; }
+
+    html[data-theme="dark"] .wdt-dark-mode-switcher .dark-mode-toggle:before { height: calc(52% - 6px); bottom: 3px; top: auto; }
+    html[data-theme="light"] .wdt-dark-mode-switcher .dark-mode-toggle:before { height: calc(51% - 6px); top: 3px; bottom: auto; } */
+
+/*========= Swicher On Bottom =========*/
+
+    .wdt-dark-mode-switcher { position: fixed; bottom: 80px; right: 0; cursor: pointer; z-index: 9999; overflow: hidden; }
+    
+    .wdt-dark-mode-switcher .dark-mode-toggle {  user-select: none; display: grid; padding: 11px 12px;
+        cursor: pointer; /* -webkit-box-shadow: 0 0 0 2px rgba(150, 144, 162, 0.15) inset; box-shadow: 0 0 0 2px rgba(150, 144, 162, 0.15) inset; */
+        border-radius: var(--wdtRadius_2X) 0px 0px var(--wdtRadius_2X); /* border: 1px solid var(--wdtBorderColor, var(--wdtDarkBorderColor)); */
+        color: var(--wdtHeadAltColor, var(--wdtDarkHeadAltColor)); text-transform: capitalize;  border-right: 0px; line-height: 1;
+        -webkit-transition: var(--wdt-Ad-Transition); transition: var(--wdt-Ad-Transition); }
+
+    .wdt-dark-mode-switcher .dark-mode-toggle .switch__item { display: flex; align-items: center; transition-property: transform, opacity;
+        justify-content: center; position: relative; grid-area: 1/-1; transition: var(--wdt-Ad-Transition); }
+
+    .wdt-dark-mode-switcher .dark-mode-toggle .switch__item span[class$="mode-toggle_icon"] { order: -1; margin-right: 0.5em; transition: none; }
+    .wdt-dark-mode-switcher .dark-mode-toggle .switch__item span[class$="mode-toggle_text"] { font-size: 0.9em; transition: none; }
+
+    .wdt-dark-mode-switcher .dark-mode-toggle:not(.wdtDark) .switch__item.dark_mode__switch { transform: translateY(-20px); opacity: 0; }
+    .wdt-dark-mode-switcher .dark-mode-toggle.wdtDark .switch__item.light_mode__switch { transform: translateY(20px); opacity: 0; }
+
+    .wdt-dark-mode-switcher .dark-mode-toggle.wdtDark .switch__item.dark_mode__switch { opacity: 1; transform: translateY(0px); }
+    .wdt-dark-mode-switcher .dark-mode-toggle:not(.wdtDark) .switch__item.light_mode__switch { opacity: 1; transform: translateY(0px); }
+
+/*--------------------------------------------------------------
+    Accents
+--------------------------------------------------------------*/
+
+
+    /* Primary */
+    .wdt-dark-mode-switcher .dark-mode-toggle { background-color: var(--wdtPrimaryColor, var(--wdtDarkPrimaryColor));
+        color: var(--wdtAccentTxtColor, var(--wdtDarkAccentTxtColor)); }
+
+    /* Secondary */
+    .wdt-dark-mode-switcher .dark-mode-toggle:hover { background-color: var(--wdtAccentTxtColor, var(--wdtDarkSecondaryColor)); 
+        color: var(--wdtSecondaryColor, var(--wdtDarkAccentTxtColor)); }
+
+
+
+
+/*========= Swicher On Bottom End =========*/
+
+/* Elmentor Widget Overight */
+
+html[data-theme="dark"] .elementor-widget.elementor-widget-icon-list:not(.wdt-dark-bg) .elementor-icon-list-icon { 
+    color: var(--wdtPrimaryColor, var(--wdtDarkPrimaryColor)) !important; }
+html[data-theme="dark"] .elementor-widget.elementor-widget-icon-list:not(.wdt-dark-bg) .elementor-icon-list-icon svg { fill: currentColor !important; }
+
+html[data-theme="dark"] .elementor-widget:not(.wdt-dark-bg) .elementor-icon-list-item:not(:has(> a)) .elementor-icon-list-icon + .elementor-icon-list-text { 
+    color: var(--wdtBodyTxtColor, var(--wdtDarkBodyTxtColor)) !important; }
+
+html[data-theme="dark"] .elementor-widget:not(.wdt-dark-bg) .elementor-icon-list-item a { color: var(--wdtHeadAltColor, var(--wdtDarkHeadAltColor)) !important; }
+html[data-theme="dark"] .elementor-widget:not(.wdt-dark-bg) .elementor-icon-list-item a:hover { color: var(--wdtPrimaryColor, var(--wdtDarkPrimaryColor)) !important; }
+
+html[data-theme="dark"] .elementor-widget.elementor-widget-text-editor:not(.wdt-dark-bg) p { color: var(--wdtBodyTxtColor, var(--wdtDarkBodyTxtColor)); }

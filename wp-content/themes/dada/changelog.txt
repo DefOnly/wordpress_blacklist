@@ -1,0 +1,21 @@
+*** Dada WordPress Theme Changelog ***
+
+Version 1.0.2
+
+    * Compatible: Latest WordPress Version    
+    * Compatible: Latest Elementor  Version
+    * Fixed: Bulk plugin installation error
+    * Fixed: Minor bugs
+    * Updated: WooCommerce outdated files
+
+Version 1.0.1
+
+    * RTL Demo updated
+    * Latest Elementor Version
+    * Latest WordPress Version
+
+Version 1.0.0
+
+    * First release!
+    * WPML file updated
+    * Demo content addded

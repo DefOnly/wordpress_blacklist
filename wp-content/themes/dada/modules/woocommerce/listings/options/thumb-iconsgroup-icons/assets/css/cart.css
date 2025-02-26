@@ -1,0 +1,38 @@
+
+/*--------------------------------------------------------------*/
+    /* #region - Thumb IconsGroup Icon */
+/*--------------------------------------------------------------*/
+
+    .woocommerce ul.products li.product .product-buttons-wrapper.product-icons a.button.product_type_simple:before{ content: "\e820"; font-family: 'Dada Icons';  }
+
+    .woocommerce ul.products li.product .product-buttons-wrapper.product-icons a.button.product_type_variable:before { content: "\f218"; font-family: 'Dada Icons'; }
+
+    .woocommerce ul.products li.product .product-buttons-wrapper.product-icons a.button.product_type_variation:before { content: "\f218"; font-family: 'Dada Icons'; }
+
+    .woocommerce ul.products li.product .product-buttons-wrapper.product-icons a.button.add_to_cart_button.product_type_simple:before,
+    .woocommerce ul.products li.product .product-buttons-wrapper.product-icons a.added_to_cart.wc-forward:before {
+        content: "";
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 97.66 82.63'%3E%3Cdefs%3E%3Cstyle%3E.wdt-cart-icon%7Bfill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px;%7D%3C/style%3E%3C/defs%3E%3Cg%3E%3Cg%3E%3Cpath class='wdt-cart-icon' d='M28.21,10.06H93.65a2,2,0,0,1,1.93,2.61l-10,32.85a4,4,0,0,1-3.86,2.85H34.26'/%3E%3Cpath class='wdt-cart-icon' d='M84.67,62.49H41.29a4,4,0,0,1-3.86-2.88L21,4.87A4,4,0,0,0,17.15,2H2'/%3E%3Ccircle class='wdt-cart-icon' cx='38.28' cy='74.57' r='6.06'/%3E%3Ccircle class='wdt-cart-icon' cx='78.63' cy='74.57' r='6.06'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 97.66 82.63'%3E%3Cdefs%3E%3Cstyle%3E.wdt-cart-icon%7Bfill:none;stroke:currentColor;stroke-linecap:round;stroke-miterlimit:10;stroke-width:6px;%7D%3C/style%3E%3C/defs%3E%3Cg%3E%3Cg%3E%3Cpath class='wdt-cart-icon' d='M28.21,10.06H93.65a2,2,0,0,1,1.93,2.61l-10,32.85a4,4,0,0,1-3.86,2.85H34.26'/%3E%3Cpath class='wdt-cart-icon' d='M84.67,62.49H41.29a4,4,0,0,1-3.86-2.88L21,4.87A4,4,0,0,0,17.15,2H2'/%3E%3Ccircle class='wdt-cart-icon' cx='38.28' cy='74.57' r='6.06'/%3E%3Ccircle class='wdt-cart-icon' cx='78.63' cy='74.57' r='6.06'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        -webkit-mask-repeat: cover;
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-repeat: cover;
+        transition: var(--wdt-Ad-Transition);
+        background-color: currentColor;
+    }
+
+    .woocommerce ul.products li.product .product-buttons-wrapper.product-icons a.added_to_cart.wc-forward:before { z-index: 1; }
+
+    .woocommerce ul.products li.product .product-buttons-wrapper.product-icons a.button.product_type_external:before { content: "\f08e"; font-family: "Dada Icons"; }
+
+    .woocommerce ul.products li.product .product-buttons-wrapper.product-icons a.button.product_type_grouped:before { content: "\f16b"; font-family: 'Dada Icons'; }
+
+    .woocommerce ul.products li.product a.add_to_cart_button.added { display: none !important; }
+
+/* #endregion - Thumb IconsGroup Icon */

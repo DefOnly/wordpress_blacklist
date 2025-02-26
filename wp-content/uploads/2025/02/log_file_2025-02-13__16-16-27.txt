@@ -1,0 +1,36 @@
+
+---Archivos descargados---
+Los archivos de importación para Default Demo ¡han sido descargados correctamente!
+Tiempo de ejecución máximo inicial = 300
+Información de archivos:
+URL del sitio = http://localhost/wordpress
+Archivo de datos = C:\xampp\htdocs\wordpress/wp-content/uploads/2025/02/demo-content-import-file_2025-02-13__16-16-27.xml
+Archivo de widget = C:\xampp\htdocs\wordpress/wp-content/uploads/2025/02/demo-widgets-import-file_2025-02-13__16-16-27.json
+Archivo del personalizador = C:\xampp\htdocs\wordpress/wp-content/uploads/2025/02/demo-customizer-import-file_2025-02-13__16-16-27.dat
+Archivos de Redux:
+ ¡no definido!
+
+---Importando los widgets---
+Standard Sidebar : 
+
+Buscar - Search - El widget ya existe
+Entradas recientes - Recent Posts - El widget ya existe
+Comentarios recientes - Recent Comments - El widget ya existe
+Archivos - Archives - El widget ya existe
+Categorías - Categories - El widget ya existe
+
+wdt-cw-blogsidebar : 
+
+Buscar - Sin título - Importado
+Dada Posts - Recent Post : - Importado
+Nube de etiquetas - Tags : - Importado
+Galería - Instagram : - Importado
+Imagen - Sin título - Importado
+
+
+
+---Importación de los ajustes del personalizador---
+¡Importación de los ajustes del personalizador finalizado!
+
+---ocdi/after_import---
+

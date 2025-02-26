@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------
+    Loader
+--------------------------------------------------------------*/
+
+.pre-loader.loader2 { height: 100%; left: 0; position: fixed; top: 0; width: 100%; z-index: 999991; 
+  background-color: var(--wdtBodyBGColor, var(--wdtDarkBodyBGColor)); }
+
+.pre-loader.loader2 .loader-inner { text-transform:uppercase; width: 100%; text-align: center; line-height:50px; margin: auto; position: absolute; 
+  left: 0; right: 0; top: 50%; transform: translateY(-50%); }
+
+.pre-loader.loader2 .loader-inner { position: relative; transform: rotate(45deg) translate(-50%, -50%); width: 20px; aspect-ratio: 1;}
+
+.pre-loader.loader2 .loader-inner .wdt-round-load { position: absolute; top: 50%; left: 50%; margin: -120px 0 0 -120px; 
+  width: clamp(6.875rem, 5rem + 8.3333vw, 15rem); height: clamp(6.875rem, 5rem + 8.3333vw, 15rem); }
+  
+.pre-loader.loader2 .loader-inner .wdt-round-load .wdt-round-load-light { z-index: 2; position: relative;
+  width: clamp(6.875rem, 5rem + 8.3333vw, 15rem); height: clamp(6.875rem, 5rem + 8.3333vw, 15rem); -moz-border-radius: clamp(6.875rem, 5rem + 8.3333vw, 15rem); 
+  -webkit-border-radius: clamp(6.875rem, 5rem + 8.3333vw, 15rem); border-radius: clamp(6.875rem, 5rem + 8.3333vw, 15rem);
+  -moz-box-shadow: 0 4px 0 var(--wdtPrimaryColor, var(--wdtDarkPrimaryColor)) inset;
+  -webkit-box-shadow: 0 4px 0 var(--wdtPrimaryColor, var(--wdtDarkPrimaryColor)) inset;
+  box-shadow: 0 4px 0 var(--wdtPrimaryColor, var(--wdtDarkPrimaryColor)) inset;
+  animation: turn-round 2s linear infinite;
+}
+  
+.pre-loader.loader2 .loader-inner .wdt-round-load .wdt-round-load-track { position: absolute; top: 0; left: 0; 
+  width: clamp(6.875rem, 5rem + 8.3333vw, 15rem); height: clamp(6.875rem, 5rem + 8.3333vw, 15rem); 
+  -moz-border-radius: clamp(6.875rem, 5rem + 8.3333vw, 15rem); -webkit-border-radius: clamp(6.875rem, 5rem + 8.3333vw, 15rem); 
+  border-radius: clamp(6.875rem, 5rem + 8.3333vw, 15rem);
+  -moz-box-shadow: 0 0 10px 4px var(--wdtTertiaryColor, var(--wdtDarkTertiaryColor)) inset; 
+  -webkit-box-shadow: 0 0 10px 4px var(--wdtTertiaryColor, var(--wdtDarkTertiaryColor)) inset; 
+  box-shadow: 0 0 10px 4px var(--wdtTertiaryColor, var(--wdtDarkTertiaryColor)) inset; }
+  
+@keyframes turn-round {
+  from { -moz-transform: rotate(0); -ms-transform: rotate(0); -webkit-transform: rotate(0); transform: rotate(0); }
+  to { -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+  
+
+
+/*--------------------------------------------------------------
+    Accents
+--------------------------------------------------------------*/
+
+    .loader-inner .loader-text:after { background-color: var(--wdtPrimaryColor, var(--wdtDarkPrimaryColor)); }
+
+
+/*--------------------------------------------------------------
+    Responsive
+--------------------------------------------------------------*/
+
+/*----*****---- << Mobile (Landscape) >> ----*****----*/
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+
+/* Common Styles for the devices below 479px width */
+
+@media only screen and (max-width: 479px) {
+
+}

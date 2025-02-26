@@ -1,0 +1,30 @@
+
+.wdt-elementor-repeater-container-wrapper { margin: 0; display: block; line-height: 1.5; }
+.wdt-elementor-repeater-container-wrapper span { display: inline; }
+
+.wdt-elementor-repeater-container-wrapper span img { object-fit: cover; object-position: center; margin: 5px 10px; }
+
+.wdt-elementor-repeater-container-wrapper span.wdt-opt-icon { 
+    cursor: pointer; position: relative; display: inline-flex; vertical-align: middle; height: fit-content; margin: 5px 10px; }
+.wdt-elementor-repeater-container-wrapper span.wdt-opt-icon > i { 
+    display: inline-flex; vertical-align: middle; width: auto; height: auto; }
+
+/*==== New Style ====*/
+
+.wdt-custom-icon-style .wdt-elementor-repeater-container-wrapper span.wdt-opt-icon {
+    background: linear-gradient(0deg, var(--wdtSecondaryColor, var(--wdtDarkSecondaryColor)),var(--wdtPrimaryColor, var(--wdtDarkPrimaryColor))); border-radius: 50%; padding: 10px; }
+.wdt-custom-icon-style .wdt-elementor-repeater-container-wrapper span.wdt-opt-icon .play_point_circle { 
+    transition: var(--wdt-Ad-Transition); transform-origin: center center; }
+
+.wdt-custom-icon-style .wdt-elementor-repeater-container-wrapper span.wdt-opt-icon .play_point_circle {
+    animation-name: play_icon_muh; animation-duration: 3s; animation-timing-function: cubic-bezier(0.7, 0, 0.3, 1); will-change: transform; 
+    animation-iteration-count: infinite; animation-fill-mode: both; transition: var(--wdt-Ad-Transition); }
+
+    @-webkit-keyframes play_icon_muh {
+        0%, 75%, 100% { opacity: 1; transform: matrix(1,0,0,1,0,0); }
+        50% { opacity: 0; transform: matrix(1,5,1,-5,-2,3); }
+    }
+    @keyframes play_icon_muh {
+        0%, 75%, 100% { opacity: 1; transform: matrix(1,0,0,1,0,0); }
+        50% { opacity: 0; transform: matrix(1,5,1,-5,-2,3); }
+    }

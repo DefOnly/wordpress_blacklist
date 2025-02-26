@@ -1,0 +1,1 @@
+<?php echo apply_filters( 'dada_footer_get_template_part', dada_get_template_part( 'footer', 'templates/footer', '', array() ) ); ?>

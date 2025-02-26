@@ -1,0 +1,48 @@
+/*--------------------------------------------------------------
+    Site follow us
+--------------------------------------------------------------*/
+
+body.page-template-tpl-header-side-nav .wdt_follow_us_icons { display: none; }
+
+.wdt_follow_us_icons { display: block; z-index: 1; float: left; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); 
+    position: fixed; top: 50%; right: 0; -webkit-transform-origin: center center; transform-origin: center center; writing-mode: vertical-rl;
+    -webkit-mix-blend-mode: exclusion; mix-blend-mode: exclusion; }
+
+.wdt_follow_us_icons .wdt_follow_us { display: inline-flex; align-items: center; color: var(--wdtAccentTxtColor, var(--wdtDarkAccentTxtColor)); 
+    -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.wdt_follow_us_icons .wdt_follow_us .wdt-follow-icon { display: flex; flex-wrap: nowrap; align-items: center; }
+
+.wdt_follow_us_icons .wdt_follow_us span, 
+.wdt_follow_us_icons .wdt_follow_us .wdt-follow-icon a { display: block;  font-size: 1rem; 
+    color: inherit; line-height: 1; font-weight: var(--wdtFontWeight_Base); white-space: nowrap; }
+
+.wdt_follow_us_icons .wdt_follow_us .wdt-follow-icon > a { display: flex; padding: 8px 0; position: relative; align-items: center; }
+.wdt_follow_us_icons .wdt_follow_us .wdt-follow-icon > a:not(:last-child):after { content: "/"; position: relative; 
+    display: inline-block; bottom: -8px; color: var(--wdtAccentTxtColor, var(--wdtDarkAccentTxtColor)); -webkit-transform: scaleY(-1); transform: scaleY(-1); }
+.wdt_follow_us_icons .wdt_follow_us .wdt-follow-icon > a:hover { color: var(--wdtLinkHoverColor, var(--wdtDarkLinkHoverColor)); }
+
+/* AT Rules - Responsive */
+
+@media only screen and (max-width: 1024px) {
+
+    .wdt_follow_us_icons { display: block; -webkit-transform: translate(0%, -50%); transform: translate(0%, -50%); 
+        top: 50%; right: auto; writing-mode: initial; -webkit-mix-blend-mode: normal; mix-blend-mode: normal; }
+    
+    .wdt_follow_us_icons .wdt_follow_us { display: inline-flex; align-items: center; color: var(--wdtAccentTxtColor, var(--wdtDarkAccentTxtColor)); 
+        -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    .wdt_follow_us_icons .wdt_follow_us .wdt-follow-icon { display: flex; flex-wrap: nowrap; align-items: center; padding: 14px 6px; 
+        background-color: rgba(0,0,0,0.6); flex-direction: column;}
+    
+    .wdt_follow_us_icons .wdt_follow_us span, 
+    .wdt_follow_us_icons .wdt_follow_us .wdt-follow-icon a { font-size: 12px; }
+    
+    .wdt_follow_us_icons .wdt_follow_us .wdt-follow-icon > a { 
+        display: flex; padding: 10px 5px; position: relative; align-items: center; text-transform: uppercase; }
+    
+    .wdt_follow_us_icons .wdt_follow_us .wdt-follow-icon > a:first-child { padding-top: 0px }
+    .wdt_follow_us_icons .wdt_follow_us .wdt-follow-icon > a:last-child { padding-bottom: 0px; }
+    .wdt_follow_us_icons .wdt_follow_us .wdt-follow-icon > a:not(:last-child) { border-bottom: 1px solid var(--wdtBodyBGColor, var(--wdtDarkBodyBGColor)); }
+
+    .wdt_follow_us_icons .wdt_follow_us .wdt-follow-icon > a:not(:last-child)::after, 
+    .wdt_follow_us_icons .wdt_follow_us > span { display: none; }
+}

@@ -1,0 +1,21 @@
+
+/*--------------------------------------------------------------*/
+    /* #region - Content IconsGroup Style */
+/*--------------------------------------------------------------*/
+
+    .woocommerce ul.products[class*="product-content-iconsgroup-style-bgfill"] li.product .product-details .product-buttons-wrapper.product-icons .wc_inline_buttons .wc_btn_inline { margin: 0; }
+
+
+    .woocommerce ul.products[class*="product-content-iconsgroup-style-bgfill"] li.product .product-details .product-buttons-wrapper.product-icons a:not(:hover),
+    .woocommerce ul.products[class*="product-content-iconsgroup-style-bgfill"] li.product .product-details .product-buttons-wrapper.product-icons a.button:not(:hover),
+    .woocommerce ul.products[class*="product-content-iconsgroup-style-bgfill"] li.product .product-details .product-buttons-wrapper.product-icons button:not(:hover),
+    .woocommerce ul.products[class*="product-content-iconsgroup-style-bgfill"] li.product .product-details .product-buttons-wrapper.product-icons button.button:not(:hover),
+    .woocommerce ul.products[class*="product-content-iconsgroup-style-bgfill"] li.product .product-details .product-buttons-wrapper.product-icons .button:not(:hover) { background-color: rgba(var(--wdtLinkHoverColorRgb, var(--wdtDarkLinkHoverColorRgb)),1); }
+
+    .woocommerce ul.products[class*="product-content-iconsgroup-style-bgfill"] li.product .product-details .product-buttons-wrapper.product-icons a:not(:hover),
+    .woocommerce ul.products[class*="product-content-iconsgroup-style-bgfill"] li.product .product-details .product-buttons-wrapper.product-icons a.button:not(:hover),
+    .woocommerce ul.products[class*="product-content-iconsgroup-style-bgfill"] li.product .product-details .product-buttons-wrapper.product-icons button:not(:hover),
+    .woocommerce ul.products[class*="product-content-iconsgroup-style-bgfill"] li.product .product-details .product-buttons-wrapper.product-icons button.button:not(:hover),
+    .woocommerce ul.products[class*="product-content-iconsgroup-style-bgfill"] li.product .product-details .product-buttons-wrapper.product-icons .button:not(:hover) { color: rgba(var(--wdtHeadAltColorRgb, var(--wdtDarkHeadAltColorRgb)),1); }
+
+/* #endregion - Content IconsGroup Style */
