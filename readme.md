@@ -1,3 +1,3 @@
 ## Vista Inicial del Homepage
 
-![Vista inicial](./Home Blacklist.png)
+![Vista inicial](home-blacklist.png)
